@@ -1,4 +1,5 @@
 import os
+import json
 
 import numpy as np
 import pandas as pd
@@ -13,6 +14,10 @@ from util import timestamp_to_int
 cwd= os.getcwd()
 plot_path= os.path.join(cwd,"plots")
 transcript_filename= "Hearings_data.csv"
+
+
+# Read JSON
+speaker_dict= json.load(open('speaker_info.json'))
 
 
 # Create df
@@ -35,3 +40,31 @@ for i in range(len(transcript_df) - 1):
 
 
 # Plots
+## Speaker (approximate) total time
+def create_speaker_duration_plot():
+    total_duration_by_speaker= transcript_df.groupby("Speaker")["duration"].sum().sort_values(ascending= False).reset_index()
+    fig, ax= plt.subplots(figsize= (15,7.5))
+    plt.gcf().subplots_adjust(bottom= .55)
+    ypos= np.arange(len(total_duration_by_speaker.Speaker))
+    ax.bar(ypos, total_duration_by_speaker.duration)
+    ax.set_title("(Approximate) Duration of Speaking by Speaker")
+    ax.set_xticks(ypos)
+#
+    def ticklabel_string(speaker):
+        try:
+            if speaker_dict[speaker]['Position'] == 'Rep.':
+                ticklabel= f"{speaker} ({speaker_dict[speaker]['Position']} - {speaker_dict[speaker]['Party']})"
+            else:
+                ticklabel= f"{speaker} ({speaker_dict[speaker]['Position']})"
+        except Exception:
+            ticklabel= speaker
+        finally:
+            return ticklabel
+#
+    ticklabel_list= total_duration_by_speaker.Speaker.apply(ticklabel_string)
+    ax.set_xticklabels(ticklabel_list, rotation= 270)
+    ax.set_xlabel("Speaker")
+    ax.set_ylabel("Duration in Seconds")
+    plt.tight_layout()
+    plt.savefig(os.path.join(plot_path,"Speaker_Duration.jpg"))
+    plt.show()
