@@ -1,0 +1,152 @@
+{
+  "Adam Schiff": {
+    "Party": "D",
+    "State": "CA",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "John Ratcliffe": {
+    "Party": "R",
+    "State": "TX",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Devin Nunes": {
+    "Party": "R",
+    "State": "CA",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Bill Taylor": {
+    "Party": "NA",
+    "State": "NA",
+    "Position": "Fact Witness",
+    "Gender": "M"
+  },
+  "George Kent": {
+    "Party": "NA",
+    "State": "NA",
+    "Position": "Fact Witness",
+    "Gender": "M"
+  },
+  "Daniel Goldman": {
+    "Party": "D",
+    "State": "NA",
+    "Position": "Staff Attorney",
+    "Gender": "M"
+  },
+  "Steve Castor": {
+    "Party": "R",
+    "State": "NA",
+    "Position": "Staff Attorney",
+    "Gender": "M"
+  },
+  "Brad Wenstrup": {
+    "Party": "R",
+    "State": "OH",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Jackie Speier": {
+    "Party": "D",
+    "State": "CA",
+    "Position": "Rep.",
+    "Gender": "F"
+  },
+  "Jim Himes": {
+    "Party": "D",
+    "State": "CT",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Andre Carson": {
+    "Party": "D",
+    "State": "IN",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Michael Turner": {
+    "Party": "R",
+    "State": "OH",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Mike Quigley": {
+    "Party": "D",
+    "State": "IL",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Peter Welch": {
+    "Party": "D",
+    "State": "VT",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Denny Heck": {
+    "Party": "D",
+    "State": "WA",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Speaker 3": {
+    "Party": "NA",
+    "State": "NA",
+    "Position": "NA",
+    "Gender": "NA"
+  },
+  "Joaquin Castro": {
+    "Party": "D",
+    "State": "TX",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Val Demings": {
+    "Party": "D",
+    "State": "FL",
+    "Position": "Rep.",
+    "Gender": "F"
+  },
+  "Terri Sewell": {
+    "Party": "D",
+    "State": "AL",
+    "Position": "Rep.",
+    "Gender": "F"
+  },
+  "Patrick Maloney": {
+    "Party": "D",
+    "State": "NY",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Chris Stewart": {
+    "Party": "R",
+    "State": "UT",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Jim Jordan": {
+    "Party": "R",
+    "State": "OH",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Will Hurd": {
+    "Party": "R",
+    "State": "TX",
+    "Position": "Rep.",
+    "Gender": "M"
+  },
+  "Speaker 1": {
+    "Party": "NA",
+    "State": "NA",
+    "Position": "NA",
+    "Gender": "NA"
+  },
+  "Elise Stefanik": {
+    "Party": "R",
+    "State": "NY",
+    "Position": "Rep.",
+    "Gender": "F"
+  }
+}
